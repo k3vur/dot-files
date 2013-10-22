@@ -1,0 +1,21 @@
+%include ~/.dot-files/hg/user
+
+[ui]
+merge = diffmerge
+
+[extensions]
+color = 
+extdiff = 
+
+[extdiff]
+cmd.diffmerge = /usr/bin/diffmerge
+
+[merge-tools]
+diffmerge.executable = /usr/bin/diffmerge
+diffmerge.args = -merge -result=$output -t1="Local Version" -t2=$output -t3="Other Version" -caption=$output $local $base $other
+diffmerge.binary = False
+diffmerge.symlinks = False
+deffmerge.gui = True
+
+[hostfingerprints]
+bitbucket.org = 24:9C:45:8B:9C:AA:BA:55:4E:01:6D:58:FF:E4:28:7D:2A:14:AE:3B
