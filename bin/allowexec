@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# disable OSX prevention to execute newly downloaded files
+# (what the do you trust... dialog does)
+if [ "$1" == "" ]; then
+	echo "Need filename"
+	exit 1
+fi
+xattr -d -r com.apple.quarantine $1

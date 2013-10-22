@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+if ! which -s ipython; then
+	echo "pylab is note installed. install with:"
+	echo "brew install python"
+	echo "pip install numpy scipy matplotlib ipython"
+	exit 1
+fi
+ipython -pylab
