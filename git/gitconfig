@@ -1,0 +1,25 @@
+[include]
+	path = ~/.dot-files/git/user
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.dot-files/git/global_ignore
+[diff]
+	tool = opendiff
+	renames = copies
+[merge]
+	tool = opendiff
+[mergetool]
+	keepBackup = false
+[svn]
+	rmdir = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	st = status
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
