@@ -1,0 +1,10 @@
+ZSH_SOURCE_PATH=$HOME/.dot-files/zsh/source
+
+source $ZSH_SOURCE_PATH/../oh-my-zsh.sh
+
+# source every .sh file in this folder
+pushd $ZSH_SOURCE_PATH > /dev/null
+for f in *.sh; do
+	source $f
+done
+popd > /dev/null
