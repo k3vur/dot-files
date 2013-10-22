@@ -14,4 +14,5 @@ ln -s $DOT_FILES/zsh/zshrc $HOME/.zshrc
 ln -s $DOT_FILES/git/gitconfig .gitconfig
 ln -s $DOT_FILES/hg/hgrc .hgrc
 ln -s $DOT_FILES/bin $HOME/bin
+ln -s $DOT_FILES/bash_profile $HOME/.bash_profile
 
