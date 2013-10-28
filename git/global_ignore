@@ -50,3 +50,7 @@ Icon
 .Spotlight-V100
 .Trashes
 
+
+
+### python
+*.py[cod]
