@@ -1,6 +1,6 @@
 # oh-my-zsh settings
 ZSH_THEME="arrow"
-plugins=(git osx lol vundle extract brew mercurial themes mvn)
+plugins=(hub osx lol vundle extract brew mercurial themes mvn)
 
 # load zsh
 ZSH=$HOME/.oh-my-zsh
