@@ -7,6 +7,8 @@ alias du='du -sh'
 alias v='mvim'
 alias o='open .'
 
+alias find-empty-dirs='find . -type d -empty'
+
 # cleaning up the terminal logs when terminal slows down
 alias turbo='sudo rm -f /private/var/log/asl/*.asl' 
 
