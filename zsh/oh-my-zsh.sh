@@ -1,5 +1,5 @@
 # oh-my-zsh settings
-ZSH_THEME="arrow"
+source $ZSH_CONFIG_PATH/pure.sh
 plugins=(hub osx lol vundle extract brew mercurial themes mvn)
 
 # load zsh

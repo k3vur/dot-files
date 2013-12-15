@@ -1,6 +1,7 @@
-ZSH_SOURCE_PATH=$HOME/.dot-files/zsh/source
+ZSH_CONFIG_PATH=$HOME/.dot-files/zsh
+ZSH_SOURCE_PATH=$ZSH_CONFIG_PATH/source
 
-source $ZSH_SOURCE_PATH/../oh-my-zsh.sh
+source $ZSH_CONFIG_PATH/oh-my-zsh.sh
 
 # source every .sh file in this folder
 pushd $ZSH_SOURCE_PATH > /dev/null
