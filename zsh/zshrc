@@ -1,11 +1,26 @@
 ZSH_CONFIG_PATH=$HOME/.dot-files/zsh
 ZSH_SOURCE_PATH=$ZSH_CONFIG_PATH/source
 
-source $ZSH_CONFIG_PATH/oh-my-zsh.sh
+source $ZSH_CONFIG_PATH/config-lib.sh
 
-# source every .sh file in this folder
-pushd $ZSH_SOURCE_PATH > /dev/null
-for f in *.sh; do
-	source $f
-done
-popd > /dev/null
+if ! binary-installed brew; then
+	echo "homebrew not found. please install homebrew"
+
+else
+	# homebrew path
+	export PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
+	# user bin directory
+	USER_BIN="$HOME/bin"
+	if [ ! -d $USER_BIN ]; then
+		mkdir $USER_BIN
+	fi
+	export PATH="$USER_BIN:$PATH"
+
+	# source every .sh file in this folder
+	pushd $ZSH_SOURCE_PATH > /dev/null
+	for f in *.sh; do
+		source $f
+	done
+	popd > /dev/null
+fi

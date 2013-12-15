@@ -1,5 +1,8 @@
-# load homebrew installed z (https://github.com/rupa/z)
-if which -s brew > /dev/null; then
-	[ -f `brew --prefix`/etc/profile.d/z.sh ] && source `brew --prefix`/etc/profile.d/z.sh
+# load z (autojump replacement: https://github.com/rupa/z)
+
+Z_SOURCE_FILE="$(brew --prefix)/etc/profile.d/z.sh"
+if [ ! -f $Z_SOURCE_FILE ]; then
+	brew install z
 fi
 
+source $Z_SOURCE_FILE
