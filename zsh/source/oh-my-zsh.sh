@@ -1,5 +1,5 @@
 # oh-my-zsh configuration
-plugins=(hub osx lol vundle extract brew mercurial themes mvn)
+plugins=(github vundle extract brew mvn)
 
 ZSH="$HOME/.oh-my-zsh"
 function install-oh-my-zsh() {
