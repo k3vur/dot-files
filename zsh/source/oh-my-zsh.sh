@@ -1,5 +1,5 @@
 # oh-my-zsh configuration
-plugins=(github vundle extract brew mvn)
+plugins=(github vundle extract brew mvn catimg fasd)
 
 ZSH="$HOME/.oh-my-zsh"
 function install-oh-my-zsh() {
