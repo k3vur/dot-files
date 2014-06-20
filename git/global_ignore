@@ -27,6 +27,9 @@ local.properties
 .buildpath
 
 
+### java
+*.class
+
 
 ### vim
 *.s[a-w][a-z]

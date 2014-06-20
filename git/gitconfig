@@ -17,6 +17,7 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	st = status
+	unstage = reset HEAD --
 [color]
 	ui = auto
 	branch = auto
