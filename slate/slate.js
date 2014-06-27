@@ -6,6 +6,7 @@ slate.configAll({
 	"windowHintsIgnoreHiddenWindows": false,
 	"windowHintsShowIcons": true,
 	"windowHintsSpread": true,
+	"modalEscapeKey": "esc"
 });
 
 
@@ -106,8 +107,8 @@ slate.bindAll({
 
 	"space:space;alt:toggle": moveCenter,
 
-	"w:space;alt:toggle": growVertical,
+	"w:space;alt:toggle": shrinkVertical,
 	"a:space;alt:toggle": shrinkHorizontal,
-	"s:space;alt:toggle": shrinkVertical,
+	"s:space;alt:toggle": growVertical,
 	"d:space;alt:toggle": growHorizontal
 });
