@@ -15,5 +15,5 @@ ln -s $DOT_FILES/git/gitconfig .gitconfig
 ln -s $DOT_FILES/hg/hgrc .hgrc
 ln -s $DOT_FILES/bin $HOME/bin
 ln -s $DOT_FILES/bash/bash_profile $HOME/.bash_profile
-ln -s $DOT_FILES/slate/slate $HOME/.slate
+ln -s $DOT_FILES/slate/slate.js $HOME/.slate.js
 
