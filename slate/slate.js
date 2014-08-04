@@ -57,16 +57,16 @@ var focusDown = slate.operation("focus", { "direction": "down" });
 var focusBehind = slate.operation("focus", { "direction": "behind" });
 var windowHint = slate.operation("hint", { "characters": "asdfgqwertzuiop" })
 slate.bindAll({
-	"left:space;ctrl:toggle": focusLeft,
-	"h:space;ctrl:toggle": focusLeft,
-	"right:space;ctrl:toggle": focusRight,
-	"l:space;ctrl:toggle": focusRight,
-	"up:space;ctrl:toggle": focusUp,
-	"k:space;ctrl:toggle": focusUp,
-	"down:space;ctrl:toggle": focusDown,
-	"j:space;ctrl:toggle": focusDown,
-	"s:space;ctrl:toggle": focusBehind,
-	"space:space;ctrl:toggle":  windowHint,
+	"left:space;ctrl;alt:toggle": focusLeft,
+	"h:space;ctrl;alt:toggle": focusLeft,
+	"right:space;ctrl;alt:toggle": focusRight,
+	"l:space;ctrl;alt:toggle": focusRight,
+	"up:space;ctrl;alt:toggle": focusUp,
+	"k:space;ctrl;alt:toggle": focusUp,
+	"down:space;ctrl;alt:toggle": focusDown,
+	"j:space;ctrl;alt:toggle": focusDown,
+	"s:space;ctrl;alt:toggle": focusBehind,
+	"space:space;ctrl;alt:toggle":  windowHint,
 	"esc:cmd": windowHint
 });
 
