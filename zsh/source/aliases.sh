@@ -6,6 +6,7 @@ alias grep='grep --color=auto'
 alias du='du -sh'
 alias v='mvim'
 alias o='open .'
+alias ql='qlmanage -p'
 
 alias find-empty-dirs='find . -type d -empty'
 
